@@ -1,28 +1,15 @@
-== README
+==README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Aplikacja my_gists na zaliczenie  labolatorium z przedmiotu "Architektura serwisów internetowych".
 
-Things you may want to cover:
+==LINK
 
-* Ruby version
+Link do działającej aplikacji na heroku: http://mossowski-gists.herokuapp.com/
 
-* System dependencies
+==OPIS
 
-* Configuration
+* pygments - kolorowanie kodu
+* will_paginate - paginacja
+* wyszukiwanie gistow po kodzie
+* CSS
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
