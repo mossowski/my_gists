@@ -1,0 +1,51 @@
+<div class="page_header">
+  <h1>My gists</h1>
+</div><br>
+
+<div class="without_header">
+  <div class="link2">
+    <%= link_to 'Home', gists_path %>
+  </div>
+  <div class="link2">
+    <%= link_to 'New Gist', new_gist_path %>
+  </div>
+  <div class="link2">
+    <%= link_to 'Search', gists_search_path %>
+  </div><br><br>
+
+  <div class="flickr_pagination">
+    <%= will_paginate %>
+  </div><br>
+
+  <div id="my-gists">
+    <table>
+      <thead>
+        <tr>
+          <th>Snippet</th>
+          <th>Lang</th>
+          <th>Description</th>
+          <th id="links">Actions</th>     
+        </tr>
+      </thead>
+
+      <tbody>
+        <% @gists.each do |gist| %>
+          <tr>
+            <td><%= raw Pygments.highlight(gist.snippet, lexer: gist.lang) %></td>
+            <td><%= gist.lang %></td>
+            <td><%= gist.description %></td>
+            <td id="links">
+              <div class="link"><%= link_to 'Show', gist %></div>
+              <div class="link"><%= link_to 'Edit', edit_gist_path(gist) %></div>
+              <div class="link"><%= link_to 'Destroy', gist, method: :delete, data: { confirm: 'Are you sure?' } %></div>
+            </td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div><br>
+  
+  <div class="flickr_pagination">
+    <%= will_paginate %>
+  </div><br>
+</div>

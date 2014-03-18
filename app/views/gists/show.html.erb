@@ -1,0 +1,30 @@
+<div class="page_header">
+  <h1>My gists</h1>
+</div><br>
+
+<div class="without_header">
+  <div class="link2">
+    <%= link_to 'Home', gists_path %>
+  </div>
+  <div class="link2">
+    <%= link_to 'New Gist', new_gist_path %>
+  </div>
+  <div class="link2">
+    <%= link_to 'Search', gists_search_path %>
+  </div><br><br>
+<p id="notice"><%= notice %></p>
+<p>
+  <strong>Lang:</strong>
+  <%= @gist.lang %>
+</p>
+<p>
+  <strong>Snippet:</strong>
+</p>
+<%= raw Pygments.highlight(@gist.snippet, lexer: @gist.lang) %>
+<p>
+  <strong>Description:</strong>
+  <%= @gist.description %>
+</p>
+<div class="link2"><%= link_to 'Edit', edit_gist_path(@gist) %></div>
+<div class="link2"><%= link_to 'Back', gists_path %></div>
+</div>
