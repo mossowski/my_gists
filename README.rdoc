@@ -1,6 +1,6 @@
 ==README
 
-Aplikacja my_gists na zaliczenie  labolatorium z przedmiotu "Architektura serwisów internetowych".
+Aplikacja my_gists na zaliczenie  laboratorium z przedmiotu "Architektura serwisów internetowych".
 
 ==LINK
 
