@@ -11,15 +11,7 @@ body {
   border:solid 1px #000000;
 }
 
-.new_link {
-  border:solid 1px #000000;
-  text-align: center;
-  width:90px;
-  background-color:#99CCFF;
-  padding:1px; 
-}
-
-.link {
+.action {
   border:solid 1px #000000;
   text-align: center;
   width:90px;
@@ -31,7 +23,7 @@ body {
   margin-top: 10px;
 }
 
-.link2 {
+.action2 {
   border:solid 1px #000000;
   text-align: center;
   width: 75px;
@@ -43,7 +35,7 @@ body {
   float:left;
 }
 
-.link3 {
+.action3 {
   border:solid 1px #000000;
   text-align: center;
   width: 75px;
@@ -70,7 +62,7 @@ body {
   color: #fff; 
 }
 
-#links {
+#actions {
   width:100px;
 }
 
