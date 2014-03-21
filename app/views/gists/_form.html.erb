@@ -1,6 +1,7 @@
 <%= form_for(@gist) do |f| %>
 <%
   all_lexers = Pygments.lexers.flatten.select.with_index(offset = 0) { |x,i| i % 2 == 0 }.sort 
+  all_lexers = all_lexers.delete_if { |x| x =~ /.\s./ }
   all_lexers = all_lexers.map { |x| x.downcase }
 %>
 
@@ -29,6 +30,6 @@
     <%= f.text_field :description, size: 45 %>
   </div>
   <div class="action2">
-    <%= f.submit 'Submit', :class => 'btnSubmit' %>
+    <%= f.submit 'Submit' %>
   </div> 
 <% end %>

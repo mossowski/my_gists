@@ -31,7 +31,7 @@
       <tbody>
         <% @gists.each do |gist| %>
           <tr>
-            <td><%= raw Pygments.highlight(gist.snippet, lexer: gist.lang) %></td>
+            <td><%= raw Pygments.highlight(gist.snippet.length > 100 ? gist.snippet[0,100] : gist.snippet, lexer: gist.lang) %></td>
             <td><%= gist.lang %></td>
             <td><%= gist.description %></td>
             <td id="actions">
