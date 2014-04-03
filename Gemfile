@@ -14,8 +14,8 @@ group :production do
 end
 
 # Use SCSS for stylesheets
-#gem 'sass-rails', '~> 4.0.0'
-#gem 'bootstrap-sass', '2.3.2.0'
+# gem 'sass-rails', '~> 4.0.1'
+# gem 'bootstrap-sass', '2.3.2.0'
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '2.1.1'
