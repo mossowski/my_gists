@@ -53,11 +53,11 @@ h1[id="title"] {
   padding:1px; 
   font-size: 18px;
   margin-right: 10px;
+   margin-bottom:10px;
 }
 
 .actions:hover {
   color: #fff; 
- background-color:#000;
 }
 
 input[type=submit] {
@@ -69,7 +69,6 @@ input[type=submit] {
 
 input[type=submit]:hover {
   color: #fff; 
- background-color:#000;
 }
 
 #actions {
@@ -159,44 +158,51 @@ div.field {
   list-style: square;
 }
 
+ol, ul {
+   font-size:   18px;
+   line-height: 22px;
+}
+
 #infinite-scrolling {
-  text-align: center;
   padding: 0.3em;
   cursor: default; 
 }
-  #infinite-scrolling a, #infinite-scrolling span, #infinite-scrolling em {
-    padding: 0.2em 0.5em; 
-  }
-  #infinite-scrolling .disabled {
-    color: #aaaaaa; 
-  }
-  #infinite-scrolling .current {
-    font-style: normal;
-    font-weight: bold;
-    color: #ff0084; 
-  }
-  #infinite-scrolling a {
-    border: 1px solid #dddddd;
-    color: #0063dc;
-    text-decoration: none; 
-  }
-  #infinite-scrolling a:hover, #infinite-scrolling a:focus {
-    border-color: #003366;
-    background: #0063dc;
-    color: white; 
-  }
-  #infinite-scrolling .page_info {
-    color: #aaaaaa;
-    padding-top: 0.8em; 
-  }
-  #infinite-scrolling .previous_page, #infinite-scrolling .next_page {
-    border-width: 2px; 
-  }
-  #infinite-scrolling .previous_page {
-    margin-right: 1em; 
-  }
-  #infinite-scrolling .next_page {
-    margin-left: 1em; 
-  }
 
-  
+#infinite-scrolling li {
+  border:0; margin:0; padding:0;
+  font-size:15px;
+  list-style:none;
+}
+#infinite-scrolling a {
+  border:solid 2px #DDDDDD;
+  margin-right:8px;
+}
+#infinite-scrolling .previous-off, #infinite-scrolling .next-off  {
+  color:#666666;
+  display:block;
+  float:left;
+  font-weight:bold;
+  padding:4px 4px;
+}
+#infinite-scrolling .next a,
+#infinite-scrolling .previous a {
+  font-weight:bold;
+  border:solid 1px #FFFFFF;
+} 
+#infinite-scrolling .active{
+  color:#ff0084;
+  font-weight:bold;
+  background-color: #000;
+}
+#infinite-scrolling a:link,
+#infinite-scrolling a:visited {
+  color:#0063e3;
+  display:block;
+  float:left;
+  padding:3px 6px;
+  text-decoration:none;
+}
+
+#infinite-scrolling a:hover {
+  border:solid 1px #666666;
+}
