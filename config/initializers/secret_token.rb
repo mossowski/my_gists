@@ -9,4 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-MyGists::Application.config.secret_key_base = 'b0058d997f07f1741e188aa5c3af6a737b21c987217d456536849cc23a5c6854cb8e50e28f39cbb07781d3225dbdcdc3b9f002e36cbaf0437d40054d776bf31e'
+MyGists::Application.config.secret_key_base = 'a35128a233637a4b08cc3c16ed69e3ce4ec729719bc708daff0c657e3a32989cf20f8665422f3de191e7988ee4c5eb24dd70ff1e3d447bac2c6b7340b5976322'

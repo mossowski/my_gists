@@ -1,0 +1,11 @@
+  <div id="gist">
+     <div id="snippet">
+       <div class="ih"><strong>Snippet</strong><hr/></div>
+       <%= raw Pygments.highlight(gist.snippet.length > 25 ? gist.snippet[0,25] + "..." : gist.snippet, lexer: gist.lang) %>
+     </div> 
+    <strong>Lang:</strong> <%= gist.lang %><br><br>
+  
+    <%= link_to 'Show', gist,  :class => 'action2'  %>
+    <%= link_to 'Edit', edit_gist_path(gist),  :class => 'action2'  %>
+    <%= link_to 'Destroy', gist, method: :delete, data: { confirm: 'Are you sure?' },  :class => 'action2'  %>
+  </div>         

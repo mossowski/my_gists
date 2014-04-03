@@ -11,6 +11,10 @@ body {
   border:solid 1px #000000;
 }
 
+h1[id="title"] {
+ text-align:left;
+}
+
 .action {
   border:solid 1px #000000;
   text-align: center;
@@ -27,28 +31,33 @@ body {
   border:solid 1px #000000;
   text-align: center;
   width: 75px;
-  height: 23px;
+  height: 20px;
   background-color:#99CCFF;
   padding:1px; 
   font-size: 18px;
-  margin-right: 15px;
+  margin-right: 10px;
   float:left;
-}
-
-.action3 {
-  border:solid 1px #000000;
-  text-align: center;
-  width: 75px;
-  height: 23px;
-  background-color:#99CCFF;
-  padding:1px; 
-  font-size: 18px;
-  margin-right: 15px;
-  float:right;
 }
 
 #search {
   float:right;
+  margin-left:5px;
+}
+
+.actions {
+  border:solid 1px #000000;
+  text-align: center;
+  width: 75px;
+  height: 20px;
+  background-color:#99CCFF;
+  padding:1px; 
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.actions:hover {
+  color: #fff; 
+ background-color:#000;
 }
 
 input[type=submit] {
@@ -60,6 +69,7 @@ input[type=submit] {
 
 input[type=submit]:hover {
   color: #fff; 
+ background-color:#000;
 }
 
 #actions {
@@ -67,31 +77,25 @@ input[type=submit]:hover {
 }
 
 .without_header {
-  width:1050px; 
+  width:85%; 
   margin:0 auto;
   background-color: #EFEFEF;
   padding:35px;
 }
 
-body, p, ol, ul, td {
-  font-family: verdana, arial, helvetica, sans-serif;
-  font-size:   18px;
-  line-height: 22px;
+#gist {
+  border:solid 1px;
+  padding:15px;
+  margin-bottom:15px;
+  padding-bottom:40px;
+  font-size:1.2em;
 }
 
-table {
-  border-collapse: collapse;
-  font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+#snippet {
   width:100%;
 }
 
-table, th, td {
-  font-size:1em;
-  border:1px solid #000000;
-  padding:0px 10px 0px 10px;
-
-}
-th {
+field {
   font-size:1.2em;
   text-align:center;
   padding-top:5px;
@@ -110,6 +114,7 @@ a {
   text-decoration: none;
   color: #000000; 
 }
+
 a:hover { 
   text-decoration: none;
   color: #fff; 
@@ -154,43 +159,44 @@ div.field {
   list-style: square;
 }
 
-.flickr_pagination {
+#infinite-scrolling {
   text-align: center;
   padding: 0.3em;
   cursor: default; 
 }
-  .flickr_pagination a, .flickr_pagination span, .flickr_pagination em {
+  #infinite-scrolling a, #infinite-scrolling span, #infinite-scrolling em {
     padding: 0.2em 0.5em; 
   }
-  .flickr_pagination .disabled {
+  #infinite-scrolling .disabled {
     color: #aaaaaa; 
   }
-  .flickr_pagination .current {
+  #infinite-scrolling .current {
     font-style: normal;
     font-weight: bold;
     color: #ff0084; 
   }
-  .flickr_pagination a {
+  #infinite-scrolling a {
     border: 1px solid #dddddd;
     color: #0063dc;
     text-decoration: none; 
   }
-  .flickr_pagination a:hover, .flickr_pagination a:focus {
+  #infinite-scrolling a:hover, #infinite-scrolling a:focus {
     border-color: #003366;
     background: #0063dc;
     color: white; 
   }
-  .flickr_pagination .page_info {
+  #infinite-scrolling .page_info {
     color: #aaaaaa;
     padding-top: 0.8em; 
   }
-  .flickr_pagination .previous_page, .flickr_pagination .next_page {
+  #infinite-scrolling .previous_page, #infinite-scrolling .next_page {
     border-width: 2px; 
   }
-  .flickr_pagination .previous_page {
+  #infinite-scrolling .previous_page {
     margin-right: 1em; 
   }
-  .flickr_pagination .next_page {
+  #infinite-scrolling .next_page {
     margin-left: 1em; 
   }
 
+  

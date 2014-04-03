@@ -3,49 +3,20 @@
 </div><br>
 
 <div class="without_header">
-  <div class="action2">
-    <%= link_to 'Home', gists_path %>
-  </div>
-  <div class="action2">
-    <%= link_to 'New', new_gist_path %>
-  </div>
-  <div class="action2">
-    <%= link_to 'Search', gists_search_path %>
-  </div><br><br>
+  <%= link_to 'Home', gists_path ,  :class => 'action2'  %>
+   <%= link_to 'New', new_gist_path,  :class => 'action2'  %>
+   <%= link_to 'Search', gists_search_path,  :class => 'action2'  %><br><br>
   <form role="search">
-  	<div class="action3" id="search">
-    <%= submit_tag "Search", :snippet => nil, :class => 'btnSubmit' %>
+    <div id="search">
+      <%= submit_tag "Search", :snippet => nil  %>
     </div>
     <div id="search">
       <%= text_field_tag :search, params[:search] %>
     </div>  
-  </form><br><br>
- 
-  <div id="my-gists">
-    <table>
-      <thead>
-        <tr>
-          <th>Snippet</th>
-          <th>Lang</th>
-          <th>Description</th>
-          <th id="actions">Actions</th>     
-        </tr>
-      </thead>
+  </form><br><br> <br>
 
-      <tbody>
-        <% @gists.each do |gist| %>
-          <tr>
-            <td><%= raw Pygments.highlight(gist.snippet, lexer: gist.lang) %></td>
-            <td><%= gist.lang %></td>
-            <td><%= gist.description %></td>
-            <td id="actions">
-          	  <div class="action"><%= link_to 'Show', gist %></div>
-              <div class="action"><%= link_to 'Edit', edit_gist_path(gist) %></div>
-              <div class="action"><%= link_to 'Destroy', gist, method: :delete, data: { confirm: 'Are you sure?' } %></div>
-            </td>
-          </tr>
-        <% end %>
-      </tbody>
-    </table>
-  </div>
+<div id="my-gists"> 
+    <%= render @gists %>
+</div>
+
 </div>

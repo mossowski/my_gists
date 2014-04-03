@@ -3,28 +3,24 @@
 </div><br>
 
 <div class="without_header">
-  <div class="action2">
-    <%= link_to 'Home', gists_path %>
-  </div>
-  <div class="action2">
-    <%= link_to 'New', new_gist_path %>
-  </div>
-  <div class="action2">
-    <%= link_to 'Search', gists_search_path %>
-  </div><br><br>
+  <%= link_to 'Home', gists_path ,  :class => 'action2'  %>
+   <%= link_to 'New', new_gist_path,  :class => 'action2'  %>
+   <%= link_to 'Search', gists_search_path,  :class => 'action2'  %>
+   <br><br>
+
 <p id="notice"><%= notice %></p>
-<p>
-  <strong>Lang:</strong>
-  <%= @gist.lang %>
-</p>
-<p>
-  <strong>Snippet:</strong>
-</p>
+<strong>Snippet:</strong>
 <%= raw Pygments.highlight(@gist.snippet, lexer: @gist.lang) %>
+<strong>Lang:</strong>
+<%= @gist.lang %>
+
 <p>
   <strong>Description:</strong>
   <%= @gist.description %>
 </p>
-<div class="action2"><%= link_to 'Edit', edit_gist_path(@gist) %></div>
-<div class="action2"><%= link_to 'Back', gists_path %></div>
+
+<%= link_to 'Edit', edit_gist_path(@gist),  :class => 'action2'  %>
+<%= link_to 'Back', gists_path,  :class => 'action2'  %>
+
+</div>
 </div>

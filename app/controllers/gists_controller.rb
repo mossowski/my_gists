@@ -4,7 +4,11 @@ class GistsController < ApplicationController
   # GET /gists
   # GET /gists.json
   def index
-    @gists = Gist.paginate(page: params[:page], per_page: 5).order('created_at DESC')
+    @gists = Gist.paginate(page: params[:page], per_page: 10).order('created_at DESC')
+    respond_to do |format|
+      format.html
+      format.js
+    end
   end
 
   # GET /gists/1
@@ -12,15 +16,13 @@ class GistsController < ApplicationController
   def show
   end
 
+   def search
+    @gists = Gist.search(params[:search])
+  end
+
   # GET /gists/new
   def new
     @gist = Gist.new
-  end
-
-  # GET /gists
-  # GET /gists.json
-  def search
-    @gists = Gist.search(params[:search])
   end
 
   # GET /gists/1/edit
@@ -75,6 +77,6 @@ class GistsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def gist_params
-      params.require(:gist).permit(:snippet, :lang, :description)
+      params.require(:gist).permit(:snippet, :lang, :description, :date)
     end
 end

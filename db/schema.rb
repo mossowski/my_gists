@@ -11,12 +11,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140308141604) do
+ActiveRecord::Schema.define(version: 20140315151916) do
 
   create_table "gists", force: true do |t|
     t.text     "snippet"
     t.string   "lang"
     t.string   "description"
+    t.date     "date"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
