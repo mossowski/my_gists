@@ -1,0 +1,248 @@
+/* line 1, /home/student/workspace/my_gists/app/assets/stylesheets/custom.css.scss */
+body {
+  background-color: #fff;
+  color: #333;
+  margin: 0;
+}
+
+/* line 7, /home/student/workspace/my_gists/app/assets/stylesheets/custom.css.scss */
+.page_header {
+  background-color: #000000;
+  text-align: center;
+  color: #99CCFF;
+  border: solid 1px #000000;
+}
+
+/* line 14, /home/student/workspace/my_gists/app/assets/stylesheets/custom.css.scss */
+h1[id="title"] {
+  text-align: left;
+}
+
+/* line 18, /home/student/workspace/my_gists/app/assets/stylesheets/custom.css.scss */
+.action {
+  border: solid 1px #000000;
+  text-align: center;
+  width: 90px;
+  background-color: #99CCFF;
+  padding: 1px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+/* line 30, /home/student/workspace/my_gists/app/assets/stylesheets/custom.css.scss */
+.action2 {
+  border: solid 1px #000000;
+  text-align: center;
+  width: 75px;
+  height: 20px;
+  background-color: #99CCFF;
+  padding: 1px;
+  font-size: 18px;
+  margin-right: 10px;
+  float: left;
+}
+
+/* line 42, /home/student/workspace/my_gists/app/assets/stylesheets/custom.css.scss */
+#search {
+  float: right;
+  margin-left: 5px;
+}
+
+/* line 47, /home/student/workspace/my_gists/app/assets/stylesheets/custom.css.scss */
+.actions {
+  border: solid 1px #000000;
+  text-align: center;
+  width: 75px;
+  height: 20px;
+  background-color: #99CCFF;
+  padding: 1px;
+  font-size: 18px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+/* line 59, /home/student/workspace/my_gists/app/assets/stylesheets/custom.css.scss */
+.actions:hover {
+  color: #fff;
+}
+
+/* line 63, /home/student/workspace/my_gists/app/assets/stylesheets/custom.css.scss */
+input[type=submit] {
+  border: none;
+  background-color: #99CCFF;
+  font-size: 16px;
+  width: 75px;
+}
+
+/* line 70, /home/student/workspace/my_gists/app/assets/stylesheets/custom.css.scss */
+input[type=submit]:hover {
+  color: #fff;
+}
+
+/* line 74, /home/student/workspace/my_gists/app/assets/stylesheets/custom.css.scss */
+#actions {
+  width: 100px;
+}
+
+/* line 78, /home/student/workspace/my_gists/app/assets/stylesheets/custom.css.scss */
+.without_header {
+  width: 85%;
+  margin: 0 auto;
+  background-color: #EFEFEF;
+  padding: 35px;
+}
+
+/* line 85, /home/student/workspace/my_gists/app/assets/stylesheets/custom.css.scss */
+#gist {
+  border: solid 1px;
+  padding: 15px;
+  margin-bottom: 15px;
+  padding-bottom: 40px;
+  font-size: 1.2em;
+}
+
+/* line 93, /home/student/workspace/my_gists/app/assets/stylesheets/custom.css.scss */
+#snippet {
+  width: 100%;
+}
+
+/* line 97, /home/student/workspace/my_gists/app/assets/stylesheets/custom.css.scss */
+field {
+  font-size: 1.2em;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: #99CCFF;
+  color: #ffffff;
+}
+
+/* line 106, /home/student/workspace/my_gists/app/assets/stylesheets/custom.css.scss */
+pre {
+  background-color: #000000;
+  padding: 5px;
+  font-size: 18px;
+}
+
+/* line 112, /home/student/workspace/my_gists/app/assets/stylesheets/custom.css.scss */
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+/* line 117, /home/student/workspace/my_gists/app/assets/stylesheets/custom.css.scss */
+a:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* line 122, /home/student/workspace/my_gists/app/assets/stylesheets/custom.css.scss */
+div.field {
+  margin-bottom: 10px;
+}
+
+/* line 126, /home/student/workspace/my_gists/app/assets/stylesheets/custom.css.scss */
+#notice {
+  color: green;
+}
+
+/* line 130, /home/student/workspace/my_gists/app/assets/stylesheets/custom.css.scss */
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+/* line 136, /home/student/workspace/my_gists/app/assets/stylesheets/custom.css.scss */
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+
+/* line 145, /home/student/workspace/my_gists/app/assets/stylesheets/custom.css.scss */
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  margin-bottom: 0px;
+  background-color: #c00;
+  color: #fff;
+}
+
+/* line 156, /home/student/workspace/my_gists/app/assets/stylesheets/custom.css.scss */
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+
+/* line 161, /home/student/workspace/my_gists/app/assets/stylesheets/custom.css.scss */
+ol, ul {
+  font-size: 18px;
+  line-height: 22px;
+}
+
+/* line 166, /home/student/workspace/my_gists/app/assets/stylesheets/custom.css.scss */
+#infinite-scrolling {
+  padding: 0.3em;
+  cursor: default;
+}
+
+/* line 171, /home/student/workspace/my_gists/app/assets/stylesheets/custom.css.scss */
+#infinite-scrolling li {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  list-style: none;
+}
+
+/* line 176, /home/student/workspace/my_gists/app/assets/stylesheets/custom.css.scss */
+#infinite-scrolling a {
+  border: solid 2px #DDDDDD;
+  margin-right: 8px;
+}
+
+/* line 180, /home/student/workspace/my_gists/app/assets/stylesheets/custom.css.scss */
+#infinite-scrolling .previous-off, #infinite-scrolling .next-off {
+  color: #666666;
+  display: block;
+  float: left;
+  font-weight: bold;
+  padding: 4px 4px;
+}
+
+/* line 188, /home/student/workspace/my_gists/app/assets/stylesheets/custom.css.scss */
+#infinite-scrolling .next a,
+#infinite-scrolling .previous a {
+  font-weight: bold;
+  border: solid 1px #FFFFFF;
+}
+
+/* line 192, /home/student/workspace/my_gists/app/assets/stylesheets/custom.css.scss */
+#infinite-scrolling .active {
+  color: #ff0084;
+  font-weight: bold;
+  background-color: #000;
+}
+
+/* line 198, /home/student/workspace/my_gists/app/assets/stylesheets/custom.css.scss */
+#infinite-scrolling a:link,
+#infinite-scrolling a:visited {
+  color: #0063e3;
+  display: block;
+  float: left;
+  padding: 3px 6px;
+  text-decoration: none;
+}
+
+/* line 206, /home/student/workspace/my_gists/app/assets/stylesheets/custom.css.scss */
+#infinite-scrolling a:hover {
+  border: solid 1px #666666;
+}
