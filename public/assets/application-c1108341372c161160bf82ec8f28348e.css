@@ -1,0 +1,319 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+
+
+ */
+
+/*
+  Place all the styles related to the matching controller here.
+  They will automatically be included in application.css.
+*/
+
+.hll { background-color: #49483e }
+.c { color: #75715e } /* Comment */
+.err { color: #960050; background-color: #1e0010 } /* Error */
+.k { color: #66d9ef } /* Keyword */
+.l { color: #ae81ff } /* Literal */
+.n { color: #f8f8f2 } /* Name */
+.o { color: #f92672 } /* Operator */
+.p { color: #f8f8f2 } /* Punctuation */
+.cm { color: #75715e } /* Comment.Multiline */
+.cp { color: #75715e } /* Comment.Preproc */
+.c1 { color: #75715e } /* Comment.Single */
+.cs { color: #75715e } /* Comment.Special */
+.ge { font-style: italic } /* Generic.Emph */
+.gs { font-weight: bold } /* Generic.Strong */
+.kc { color: #66d9ef } /* Keyword.Constant */
+.kd { color: #66d9ef } /* Keyword.Declaration */
+.kn { color: #f92672 } /* Keyword.Namespace */
+.kp { color: #66d9ef } /* Keyword.Pseudo */
+.kr { color: #66d9ef } /* Keyword.Reserved */
+.kt { color: #66d9ef } /* Keyword.Type */
+.ld { color: #e6db74 } /* Literal.Date */
+.m { color: #ae81ff } /* Literal.Number */
+.s { color: #e6db74 } /* Literal.String */
+.na { color: #a6e22e } /* Name.Attribute */
+.nb { color: #f8f8f2 } /* Name.Builtin */
+.nc { color: #a6e22e } /* Name.Class */
+.no { color: #66d9ef } /* Name.Constant */
+.nd { color: #a6e22e } /* Name.Decorator */
+.ni { color: #f8f8f2 } /* Name.Entity */
+.ne { color: #a6e22e } /* Name.Exception */
+.nf { color: #a6e22e } /* Name.Function */
+.nl { color: #f8f8f2 } /* Name.Label */
+.nn { color: #f8f8f2 } /* Name.Namespace */
+.nx { color: #a6e22e } /* Name.Other */
+.py { color: #f8f8f2 } /* Name.Property */
+.nt { color: #f92672 } /* Name.Tag */
+.nv { color: #f8f8f2 } /* Name.Variable */
+.ow { color: #f92672 } /* Operator.Word */
+.w { color: #f8f8f2 } /* Text.Whitespace */
+.mf { color: #ae81ff } /* Literal.Number.Float */
+.mh { color: #ae81ff } /* Literal.Number.Hex */
+.mi { color: #ae81ff } /* Literal.Number.Integer */
+.mo { color: #ae81ff } /* Literal.Number.Oct */
+.sb { color: #e6db74 } /* Literal.String.Backtick */
+.sc { color: #e6db74 } /* Literal.String.Char */
+.sd { color: #e6db74 } /* Literal.String.Doc */
+.s2 { color: #e6db74 } /* Literal.String.Double */
+.se { color: #ae81ff } /* Literal.String.Escape */
+.sh { color: #e6db74 } /* Literal.String.Heredoc */
+.si { color: #e6db74 } /* Literal.String.Interpol */
+.sx { color: #e6db74 } /* Literal.String.Other */
+.sr { color: #e6db74 } /* Literal.String.Regex */
+.s1 { color: #e6db74 } /* Literal.String.Single */
+.ss { color: #e6db74 } /* Literal.String.Symbol */
+.bp { color: #f8f8f2 } /* Name.Builtin.Pseudo */
+.vc { color: #f8f8f2 } /* Name.Variable.Class */
+.vg { color: #f8f8f2 } /* Name.Variable.Global */
+.vi { color: #f8f8f2 } /* Name.Variable.Instance */
+.il { color: #ae81ff } /* Literal.Number.Integer.Long *//* line 1, /home/student/workspace/my_gists/app/assets/stylesheets/scaffolds.css.scss */
+body {
+  background-color: #fff;
+  color: #333;
+  margin: 0;
+}
+
+/* line 7, /home/student/workspace/my_gists/app/assets/stylesheets/scaffolds.css.scss */
+.page_header {
+  background-color: #000000;
+  text-align: center;
+  color: #99CCFF;
+  border: solid 1px #000000;
+}
+
+/* line 14, /home/student/workspace/my_gists/app/assets/stylesheets/scaffolds.css.scss */
+h1[id="title"] {
+  text-align: left;
+}
+
+/* line 18, /home/student/workspace/my_gists/app/assets/stylesheets/scaffolds.css.scss */
+.action {
+  border: solid 1px #000000;
+  text-align: center;
+  width: 90px;
+  background-color: #99CCFF;
+  padding: 1px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+/* line 30, /home/student/workspace/my_gists/app/assets/stylesheets/scaffolds.css.scss */
+.action2 {
+  border: solid 1px #000000;
+  text-align: center;
+  width: 75px;
+  height: 20px;
+  background-color: #99CCFF;
+  padding: 1px;
+  font-size: 18px;
+  margin-right: 10px;
+  float: left;
+}
+
+/* line 42, /home/student/workspace/my_gists/app/assets/stylesheets/scaffolds.css.scss */
+#search {
+  float: right;
+  margin-left: 5px;
+}
+
+/* line 47, /home/student/workspace/my_gists/app/assets/stylesheets/scaffolds.css.scss */
+.actions {
+  border: solid 1px #000000;
+  text-align: center;
+  width: 75px;
+  height: 20px;
+  background-color: #99CCFF;
+  padding: 1px;
+  font-size: 18px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+/* line 59, /home/student/workspace/my_gists/app/assets/stylesheets/scaffolds.css.scss */
+.actions:hover {
+  color: #fff;
+}
+
+/* line 63, /home/student/workspace/my_gists/app/assets/stylesheets/scaffolds.css.scss */
+input[type=submit] {
+  border: none;
+  background-color: #99CCFF;
+  font-size: 16px;
+  width: 75px;
+}
+
+/* line 70, /home/student/workspace/my_gists/app/assets/stylesheets/scaffolds.css.scss */
+input[type=submit]:hover {
+  color: #fff;
+}
+
+/* line 74, /home/student/workspace/my_gists/app/assets/stylesheets/scaffolds.css.scss */
+#actions {
+  width: 100px;
+}
+
+/* line 78, /home/student/workspace/my_gists/app/assets/stylesheets/scaffolds.css.scss */
+.without_header {
+  width: 85%;
+  margin: 0 auto;
+  background-color: #EFEFEF;
+  padding: 25px;
+}
+
+/* line 85, /home/student/workspace/my_gists/app/assets/stylesheets/scaffolds.css.scss */
+#gist {
+  border: solid 1px;
+  padding: 15px;
+  margin-bottom: 15px;
+  padding-bottom: 40px;
+  font-size: 1.2em;
+}
+
+/* line 93, /home/student/workspace/my_gists/app/assets/stylesheets/scaffolds.css.scss */
+#snippet {
+  width: 100%;
+}
+
+/* line 97, /home/student/workspace/my_gists/app/assets/stylesheets/scaffolds.css.scss */
+field {
+  font-size: 1.2em;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: #99CCFF;
+  color: #ffffff;
+}
+
+/* line 106, /home/student/workspace/my_gists/app/assets/stylesheets/scaffolds.css.scss */
+pre {
+  background-color: #000000;
+  padding: 5px;
+  font-size: 18px;
+}
+
+/* line 112, /home/student/workspace/my_gists/app/assets/stylesheets/scaffolds.css.scss */
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+/* line 117, /home/student/workspace/my_gists/app/assets/stylesheets/scaffolds.css.scss */
+a:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* line 122, /home/student/workspace/my_gists/app/assets/stylesheets/scaffolds.css.scss */
+div.field {
+  margin-bottom: 10px;
+}
+
+/* line 126, /home/student/workspace/my_gists/app/assets/stylesheets/scaffolds.css.scss */
+#notice {
+  color: green;
+}
+
+/* line 130, /home/student/workspace/my_gists/app/assets/stylesheets/scaffolds.css.scss */
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+/* line 136, /home/student/workspace/my_gists/app/assets/stylesheets/scaffolds.css.scss */
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+
+/* line 145, /home/student/workspace/my_gists/app/assets/stylesheets/scaffolds.css.scss */
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  margin-bottom: 0px;
+  background-color: #c00;
+  color: #fff;
+}
+
+/* line 156, /home/student/workspace/my_gists/app/assets/stylesheets/scaffolds.css.scss */
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+
+/* line 161, /home/student/workspace/my_gists/app/assets/stylesheets/scaffolds.css.scss */
+ol, ul {
+  font-size: 18px;
+  line-height: 22px;
+}
+
+/* line 166, /home/student/workspace/my_gists/app/assets/stylesheets/scaffolds.css.scss */
+#infinite-scrolling {
+  padding: 0.3em;
+  cursor: default;
+  margin-bottom: 65px;
+}
+
+/* line 172, /home/student/workspace/my_gists/app/assets/stylesheets/scaffolds.css.scss */
+#infinite-scrolling li {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  list-style: none;
+}
+
+/* line 177, /home/student/workspace/my_gists/app/assets/stylesheets/scaffolds.css.scss */
+#infinite-scrolling a {
+  border: solid 2px #DDDDDD;
+  margin-right: 8px;
+}
+
+/* line 181, /home/student/workspace/my_gists/app/assets/stylesheets/scaffolds.css.scss */
+#infinite-scrolling .previous-off, #infinite-scrolling .next-off {
+  color: #00000;
+  display: block;
+  float: left;
+  font-weight: bold;
+  padding: 4px 4px;
+}
+
+/* line 188, /home/student/workspace/my_gists/app/assets/stylesheets/scaffolds.css.scss */
+#infinite-scrolling .active {
+  color: #ff0084;
+  font-weight: bold;
+  background-color: #000;
+}
+
+/* line 194, /home/student/workspace/my_gists/app/assets/stylesheets/scaffolds.css.scss */
+#infinite-scrolling a:link,
+#infinite-scrolling a:visited {
+  color: #0063e3;
+  display: block;
+  float: left;
+  padding: 3px 6px;
+  text-decoration: none;
+}
+
+/* line 202, /home/student/workspace/my_gists/app/assets/stylesheets/scaffolds.css.scss */
+#infinite-scrolling a:hover {
+  border: solid 2px #666666;
+}

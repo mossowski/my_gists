@@ -79,7 +79,7 @@ input[type=submit]:hover {
   width:85%; 
   margin:0 auto;
   background-color: #EFEFEF;
-  padding:25px;
+  padding:35px;
 }
 
 #gist {
@@ -166,7 +166,6 @@ ol, ul {
 #infinite-scrolling {
   padding: 0.3em;
   cursor: default; 
-  margin-bottom:65px;
 }
 
 #infinite-scrolling li {
@@ -179,12 +178,17 @@ ol, ul {
   margin-right:8px;
 }
 #infinite-scrolling .previous-off, #infinite-scrolling .next-off  {
-  color:#00000;
+  color:#666666;
   display:block;
   float:left;
   font-weight:bold;
   padding:4px 4px;
 }
+#infinite-scrolling .next a,
+#infinite-scrolling .previous a {
+  font-weight:bold;
+  border:solid 1px #FFFFFF;
+} 
 #infinite-scrolling .active{
   color:#ff0084;
   font-weight:bold;
@@ -200,5 +204,5 @@ ol, ul {
 }
 
 #infinite-scrolling a:hover {
-  border:solid 2px #666666;
+  border:solid 1px #666666;
 }
